@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0 0 100px 100px;
+    background-image: url(imagens/baner4.png);
+    background-repeat: repeat;
+    background-size: 1685px;
+    justify-content: space-between;
+    
+}
+header a img{
+    width: 100px;
+    margin: 5px 0 0 50px;
+}
+header nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 35px 40px 0 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    padding: -20px;
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+}
+header nav ul li a:active{
+    padding: 20px;
+    padding: -20px;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.281);
+    color: rgb(0, 0, 0);
+}
+.principal{
+    display: flex;
+    max-width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to right, orange, white);
+    box-shadow: 0 0 100px yellow;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    overflow: hidden;
+    position: relative;
+}
+.principal img {
+    position: absolute;
+    right: 100%;
+    animation: moverDaDireitaParaAEsquerda 4s forwards;
+}
+@keyframes moverDaDireitaParaAEsquerda {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 50px;
+    }
+}
+.titulo{
+    width: 55%;
+}
+.titulo h1{
+    margin: 270px 0 0 150px;
+    width: 100%;
+    font-size: 50px;
+}
+.principal img{
+    margin: 100px 0 0 50px;
+}
+.nuvens{
+    height: 100px;
+    width: 100%;
+}
+.historia{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.display .img{
+    margin: 0 auto;
+}
+h2{
+    font-size: 40px;
+}
+.p{
+    padding-top: 60px;
+    width: 60%;
+    text-align: justify;
+    font-size: 20px;
+}
+.p2{
+    margin: 50px 0 30px 0;
+    text-align: justify;
+    font-size: 20px;
+}
+.img{
+    width: 200px;
+    border-radius: 30px;
+}
+.enredo{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.sagas{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.sagas ul li{
+    margin: 50px 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mangas{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.a{
+    color: orange;
+    font-size: 30px;
+}
+.filmes{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.musicas{
+    border-radius: 100px;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.personagens{
+    border-radius: 100px;
+    margin-bottom: 100px;
+    padding: 50px 0 130px 0;
+    box-shadow: 0 5px 100px yellow;
+}
+.personagens .h2{
+    margin: 50px 0 20px 100px;
+}
+.personagens-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.personagens-imagem{
+    width: 200px;
+    height: 500px;
+    margin: 30px 70px 0 70px;
+    padding: 0;
+    position: relative;
+    padding: 20px;
+}
+.personagens-imagem img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none; 
+    z-index: 1;
+}
+.personagens-caixa{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 0;
+}
+.personagens-caixa:hover{
+    background-color: rgba(255, 166, 0, 0.767);
+}
+.personagens-caixa:active{
+    background-color: orange;
+}
+.personagens-caixa p{
+    padding: 80px 0 0 60px;
+    color: white;
+    font-size: 30px;
+}
+.personagens .paragrafo-personagens{
+    margin: 100px 40px 0px 100px;
+    text-align: justify;
+    font-size: 20px;
+}
+.personagens .paragrafo-sobre-mim{
+    margin: 20px 0px 0px 100px;
+    text-align: justify;
+}
+footer{
+    height: 100px;
+    display: flex;flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 100px 100px 0 0;
+    background-image: url(imagens/baner4.png);
+    background-repeat: repeat;
+    background-size: 1685px;
+}
+footer .paragrafo-copy{
+    margin: 50px 0 0 70px;
+}
+footer .footer-hotmail{
+    display: flex;
+}
+footer .paragrafo-hotmail{
+    margin: 50px 70px 0 5px;
+}
+footer .footer-hotmail a img{
+    margin-top: 45px;
+    height: 30px;
+}
+@media (max-width: 1421px){
+    .titulo h1{
+        margin: 270px 0 0 150px;
+        
+        font-size: 40px;
+    }
+}
+@media (max-width: 1125px){
+    .titulo h1{
+        margin: 270px 0 0 80px;
+        width: 80%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 971px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header a img{
+        margin-left: -100px;
+    }
+    header nav ul{
+        margin: 20px 0 20px 70px;
+        display: flex;
+    }
+    header nav ul li a{
+        margin: 0 0 0 -50px;
+    }
+    .p{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 800px){
+    .principal img{
+        margin-top: 170px;
+        width: 400px;
+    }
+}
+@media (max-width: 725px){
+    .principal img{
+        margin-top: 230px;
+        width: 350px;
+    }
+}
+@media (max-width: 677px){
+    .personagens .paragrafo-sobre-mim{
+        margin: 20px 30px 0px 50px;
+        text-align: justify;
+    }
+}
+@media (max-width: 665px){
+    .principal{
+        height: 300px;
+    }
+    .principal img {
+        width: 200px;
+        margin-top: 60px;
+        position: absolute;
+        right: 100%;
+        animation: moverDaDireitaParaAEsquerda 4s forwards;
+    }
+    .principal h1{
+        margin: 100px 0 0 20px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header a img{
+        margin-left: 0;
+    }
+    header nav ul {
+        margin: 0;
+        display: flex;
+    }
+    header nav ul li{
+        margin: 0 10px 30px 10px;
+        padding: 0;
+    }
+    header nav ul li a{
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 -10px 0 0;
+    }
+    .principal{
+        height: 300px;
+    }
+    .principal img {
+        width: 200px;
+        margin-top: 60px;
+        position: absolute;
+        right: 100%;
+        animation: moverDaDireitaParaAEsquerda 4s forwards;
+    }
+    .principal h1{
+        margin: 80px 0 0 20px;
+        font-size: 20px;
+    }
+    .historia{
+        padding: 40px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+    .enredo{
+        padding: 40px;
+    }
+    .sagas{
+        padding: 40px;
+    }
+    .mangas{
+        padding: 40px;
+    }
+    .filmes{
+        padding: 40px;
+    }
+    .musicas{
+        padding: 40px;
+    }
+    .personagens .h2{
+        margin-left: 60px;
+    }
+    .personagens .paragrafo-personagens{
+        margin: 40px;
+    }
+}
+@media (max-width: 496px){
+    footer{
+        height: 130px;
+    }
+    footer .footer-hotmail{
+        margin: -60px 0 0 70px;
+    }
+}
