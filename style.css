@@ -140,6 +140,12 @@ h2{
     border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
+.sagas ul li{
+    margin: 40px 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
 .sagas .navlinks li{
     margin: 50px 0 0 20px;
     font-size: 20px;
@@ -481,10 +487,7 @@ footer .paragrafoEmail{
         text-align: center;
     }
     .sagas ul li{
-        margin: 40px 0 0 20px;
         font-size: 20px;
-        font-weight: bold;
-        color: orange;
     }
     .boxFlex .boxImg{
         margin: 50px 0 0 0;
