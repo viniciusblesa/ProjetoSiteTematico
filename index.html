@@ -4,172 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Ball</title>
-    <link rel="icon" href="imagens/Logo-removebg-preview.png">
+    <link rel="icon" href="img/Logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabesalho da Página Com Navegação -->
     <header>
-        <a href="index.html"><img src="imagens/Logo-removebg-preview.png" alt="Esfera do Dragao"></a>
+        <a href="index.html"><img src="img/Logo.png" alt="Esfera do Dragão de 4 Estrelas"></a>
         <nav>
-            <ul>
+            <ul id="navlinks" class="navlinks">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#historia">História</a></li>
                 <li><a href="#enredo">Enredo</a></li>
                 <li><a href="#personagens">Personagens</a></li>
             </ul>
         </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-    <div id="inicio" class="principal">
-        <div class="titulo">
+    <!-- Seção de Apresentação da Página Com Titulo e Imagem do Goku -->
+    <section id="inicio" class="apresentacao">
+        <div class="tituloApresentacao">
             <h1>Oi eu sou Goku!! <br>Bem-vindo ao meu site! que contará sobre o mundo Dragon Ball.</h1>
         </div>
-        <img src="imagens/Goku_Principal-removebg-preview.png" alt="Goku">
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div id="historia" class="historia">
+        <img id="goku" src="img/GokuApresentacao.png" alt="Goku">
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Conta um Pouco Da História de Dragon Ball e Com uma Imagem do Seu Criador Akira Toriyama -->
+    <section id="historia" class="historia">
         <h2>História</h2>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball é uma icônica franquia de mídia japonesa concebida por Akira Toriyama. Sua jornada teve início com uma série de mangá escrita e ilustrada por Toriyama, que foi publicada em capítulos na famosa revista Weekly Shonen Jump de 1984 a 1995. A abreviatura comumente usada para a série é "DB". Inspirado no clássico romance chinês "Jornada ao Oeste", Dragon Ball narra as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta, enquanto ele se dedica ao treinamento em artes marciais e explora o vasto mundo em busca das lendárias sete Esferas do Dragão. Essas esferas, quando reunidas, têm o poder de convocar um dragão capaz de realizar um desejo. Ao longo de sua jornada, Goku estabelece laços de amizade duradouros e enfrenta uma ampla gama de vilões, muitos dos quais também cobiçam as Esferas do Dragão.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball é uma icônica franquia de mídia japonesa concebida por Akira Toriyama. Sua jornada teve início com uma série de mangá escrita e ilustrada por Toriyama, que foi publicada em capítulos na famosa revista Weekly Shonen Jump de 1984 a 1995. A abreviatura comumente usada para a série é "DB". Inspirado no clássico romance chinês "Jornada ao Oeste", Dragon Ball narra as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta, enquanto ele se dedica ao treinamento em artes marciais e explora o vasto mundo em busca das lendárias sete Esferas do Dragão. Essas esferas, quando reunidas, têm o poder de convocar um dragão capaz de realizar um desejo. Ao longo de sua jornada, Goku estabelece laços de amizade duradouros e enfrenta uma ampla gama de vilões, muitos dos quais também cobiçam as Esferas do Dragão.</p>
+            <div class="boxImg">
+                <img src="img/AkiraToriyama.png" alt="Akira Toriyama">
             </div>
-            <img class="img" src="imagens/Criador_do_Dragon_Ball.png" alt="Akira Toriyama">
         </div>
-        <p class="p2">O universo de Dragon Ball expandiu-se além do mangá, abrangendo uma série de anime, filmes, jogos eletrônicos e mercadorias. A adaptação para anime da série de mangá foi produzida pela Toei Animation e transmitida pela primeira vez no Japão em 1986. Dragon Ball e Dragon Ball Z, transmitidos no Japão de 1986 a 1996, foram inspirados no mangá original e se tornaram duas das séries de anime mais populares e influentes em todo o mundo. Além disso, a Toei desenvolveu 20 filmes animados e três especiais de TV, junto com duas outras séries de anime, Dragon Ball GT (1996–1997) e Dragon Ball Super (2015–2018). A franquia também inclui uma ampla variedade de produtos, como filmes, jogos de cartas, figuras de ação e trilhas sonoras, além de uma grande quantidade de jogos eletrônicos. Em novembro de 2014, as vendas de mercadorias relacionadas a Dragon Ball ultrapassaram US$ 5 bilhões, solidificando sua posição como uma das franquias de mangá mais lucrativas de todos os tempos.</p>
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div id="enredo" class="enredo">
+        <p class="paragrafo2">O universo de Dragon Ball expandiu-se além do mangá, abrangendo uma série de anime, filmes, jogos eletrônicos e mercadorias. A adaptação para anime da série de mangá foi produzida pela Toei Animation e transmitida pela primeira vez no Japão em 1986. Dragon Ball e Dragon Ball Z, transmitidos no Japão de 1986 a 1996, foram inspirados no mangá original e se tornaram duas das séries de anime mais populares e influentes em todo o mundo. Além disso, a Toei desenvolveu 20 filmes animados e três especiais de TV, junto com duas outras séries de anime, Dragon Ball GT (1996–1997) e Dragon Ball Super (2015–2018). A franquia também inclui uma ampla variedade de produtos, como filmes, jogos de cartas, figuras de ação e trilhas sonoras, além de uma grande quantidade de jogos eletrônicos. Em novembro de 2014, as vendas de mercadorias relacionadas a Dragon Ball ultrapassaram US$ 5 bilhões, solidificando sua posição como uma das franquias de mangá mais lucrativas de todos os tempos.</p>
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Fala Sobre o Enredo de Dragon Ball -->
+    <section id="enredo" class="enredo">
         <h2>Enredo</h2>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball é uma renomada franquia de mídia japonesa criada por Akira Toriyama. Sua trajetória começou com um mangá escrito e ilustrado pelo próprio Toriyama, que foi lançado em capítulos na popular revista Weekly Shonen Jump entre 1984 e 1995. A série é frequentemente abreviada como "DB". Inspirado pelo clássico romance chinês "Jornada ao Oeste", Dragon Ball relata as aventuras do protagonista, Son Goku, desde sua infância até a vida adulta, enquanto ele se dedica ao treinamento em artes marciais e explora o mundo em busca das míticas sete Esferas do Dragão. Quando reunidas, essas esferas possuem o poder de invocar um dragão que concede qualquer desejo. Durante sua jornada, Goku constrói amizades profundas e enfrenta diversos antagonistas, muitos dos quais também almejam as Esferas do Dragão.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball é uma renomada franquia de mídia japonesa criada por Akira Toriyama. Sua trajetória começou com um mangá escrito e ilustrado pelo próprio Toriyama, que foi lançado em capítulos na popular revista Weekly Shonen Jump entre 1984 e 1995. A série é frequentemente abreviada como "DB". Inspirado pelo clássico romance chinês "Jornada ao Oeste", Dragon Ball relata as aventuras do protagonista, Son Goku, desde sua infância até a vida adulta, enquanto ele se dedica ao treinamento em artes marciais e explora o mundo em busca das míticas sete Esferas do Dragão. Quando reunidas, essas esferas possuem o poder de invocar um dragão que concede qualquer desejo. Durante sua jornada, Goku constrói amizades profundas e enfrenta diversos antagonistas, muitos dos quais também almejam as Esferas do Dragão.</p>
+            <div class="boxImg">
+                <img src="img/GokuEnredo.png" alt="Goku">
             </div>
-            <img class="img" src="imagens/Goku2.png" alt="Goku">
         </div>
-        <p class="p2">A história de Dragon Ball começa com Son Goku, um jovem inocente e cheio de energia, que vive sozinho após a morte de seu avô adotivo na Montanha Paozu. Um dia, ele encontra Bulma, uma garota inteligente da cidade que está em busca das lendárias sete Esferas do Dragão. Intrigado, Goku concorda em acompanhá-la em sua jornada para encontrar as Esferas. Juntos, eles embarcam em uma aventura cheia de desafios, fazendo novos amigos ao longo do caminho. Depois, Goku passa por um rigoroso treinamento com o lendário mestre Kame-Sennin, onde conhece o jovem Kuririn, que se torna seu companheiro de treino. Durante esse tempo, Goku participa de vários torneios mundiais de artes marciais, enfrentando desafios cada vez maiores. À medida que cresce e se desenvolve, Goku confronta numerosos inimigos, incluindo Piccolo, que eventualmente se torna um aliado valioso. Como jovem adulto, Goku cumpre uma promessa feita na infância e se casa com Chi-Chi, com quem tem seu primeiro filho, chamado Gohan.</p>
-        <p class="p2">Goku descobre sua verdadeira origem como membro da raça extraterrestre Saiyajin, enviado à Terra quando criança com a missão de conquistar o planeta. No entanto, após um ferimento na cabeça pouco depois de sua chegada, ele perde a memória de sua missão e sua natureza agressiva. Decidindo defender seu planeta adotado, Goku enfrenta desafios cada vez maiores, incluindo o príncipe dos Saiyajins, Vegeta, que eventualmente se torna um aliado. Com sua família e amigos ao seu lado, Goku enfrenta poderosos inimigos como Freeza, Cell, Boo, entre outros, emergindo como o defensor da Terra e do universo inteiro.</p>
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div class="sagas">
+        <p class="paragrafo2">A história de Dragon Ball começa com Son Goku, um jovem inocente e cheio de energia, que vive sozinho após a morte de seu avô adotivo na Montanha Paozu. Um dia, ele encontra Bulma, uma garota inteligente da cidade que está em busca das lendárias sete Esferas do Dragão. Intrigado, Goku concorda em acompanhá-la em sua jornada para encontrar as Esferas. Juntos, eles embarcam em uma aventura cheia de desafios, fazendo novos amigos ao longo do caminho. Depois, Goku passa por um rigoroso treinamento com o lendário mestre Kame-Sennin, onde conhece o jovem Kuririn, que se torna seu companheiro de treino. Durante esse tempo, Goku participa de vários torneios mundiais de artes marciais, enfrentando desafios cada vez maiores. À medida que cresce e se desenvolve, Goku confronta numerosos inimigos, incluindo Piccolo, que eventualmente se torna um aliado valioso. Como jovem adulto, Goku cumpre uma promessa feita na infância e se casa com Chi-Chi, com quem tem seu primeiro filho, chamado Gohan.</p>
+        <p class="paragrafo2">Goku descobre sua verdadeira origem como membro da raça extraterrestre Saiyajin, enviado à Terra quando criança com a missão de conquistar o planeta. No entanto, após um ferimento na cabeça pouco depois de sua chegada, ele perde a memória de sua missão e sua natureza agressiva. Decidindo defender seu planeta adotado, Goku enfrenta desafios cada vez maiores, incluindo o príncipe dos Saiyajins, Vegeta, que eventualmente se torna um aliado. Com sua família e amigos ao seu lado, Goku enfrenta poderosos inimigos como Freeza, Cell, Boo, entre outros, emergindo como o defensor da Terra e do universo inteiro.</p>
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Conta um Resumo de Cada Saga De Dragon Ball -->
+    <section class="sagas">
         <h2>Sagas</h2>
+        <!-- Saga Dragon Ball Clássico -->
         <ul>
-            <li class="li">Saga Dragon Ball Classico</li>
+            <li>Saga Dragon Ball Clássico</li>
         </ul>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball clássico, criado em 1984, é o ponto de partida de uma jornada épica que cativou gerações inteiras de fãs ao redor do mundo. Nele, somos apresentados ao jovem e destemido Son Goku, cujas aventuras começam quando ele conhece Bulma e parte em busca das Esferas do Dragão. Ao longo de sua jornada, Goku enfrenta uma miríade de desafios e inimigos formidáveis, mas sua coragem e determinação nunca vacilam. Com a ajuda de seus amigos, como Bulma, Mestre Kame, Kuririn e Yamcha, Goku supera obstáculos aparentemente insuperáveis e se torna cada vez mais forte. Além de suas incríveis habilidades de combate, Goku também personifica valores como amizade, lealdade e justiça. Sua disposição para proteger aqueles que ama e lutar pelo que é certo o torna um herói verdadeiramente inspirador para pessoas de todas as idades. A jornada de Goku em busca das Esferas do Dragão não é apenas uma busca por poder, mas também uma jornada de autodescoberta e crescimento pessoal. Ao longo do caminho, ele aprende lições valiosas sobre o mundo, sobre si mesmo e sobre o verdadeiro significado da força.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball clássico, criado em 1984, é o ponto de partida de uma jornada épica que cativou gerações inteiras de fãs ao redor do mundo. Nele, somos apresentados ao jovem e destemido Son Goku, cujas aventuras começam quando ele conhece Bulma e parte em busca das Esferas do Dragão. Ao longo de sua jornada, Goku enfrenta uma miríade de desafios e inimigos formidáveis, mas sua coragem e determinação nunca vacilam. Com a ajuda de seus amigos, como Bulma, Mestre Kame, Kuririn e Yamcha, Goku supera obstáculos aparentemente insuperáveis e se torna cada vez mais forte. Além de suas incríveis habilidades de combate, Goku também personifica valores como amizade, lealdade e justiça. Sua disposição para proteger aqueles que ama e lutar pelo que é certo o torna um herói verdadeiramente inspirador para pessoas de todas as idades. A jornada de Goku em busca das Esferas do Dragão não é apenas uma busca por poder, mas também uma jornada de autodescoberta e crescimento pessoal. Ao longo do caminho, ele aprende lições valiosas sobre o mundo, sobre si mesmo e sobre o verdadeiro significado da força.</p>
+            <div class="boxImg">
+                <img src="img/DragonBallClassico.png" alt="Dragon Ball Clássico">
             </div>
-            <img class="img" src="imagens/dragon_ball_classico3.png" alt="Dragon Ball Classico">
         </div>
-        <p class="p2">Dragon Ball clássico não é apenas uma série de anime e mangá; é uma obra-prima que transcende o tempo e continua a encantar e inspirar fãs em todo o mundo. Sua influência duradoura é um testemunho da profundidade de sua narrativa e do carisma duradouro de seus personagens. Ao longo de sua jornada, Goku enfrenta desafios cada vez maiores, desde o exército da Red Ribbon até o temível Piccolo Daimaoh. Com seus amigos, como o mestre Kame e Kuririn, Goku desenvolve suas habilidades de luta e descobre sua verdadeira identidade como um Saiyajin. Dragon Ball clássico não é apenas uma história de batalhas épicas, mas também uma narrativa sobre coragem, amizade e superação, que continua a inspirar e encantar fãs de todas as idades até os dias de hoje.</p>
+        <p class="paragrafo2">Dragon Ball clássico não é apenas uma série de anime e mangá; é uma obra-prima que transcende o tempo e continua a encantar e inspirar fãs em todo o mundo. Sua influência duradoura é um testemunho da profundidade de sua narrativa e do carisma duradouro de seus personagens. Ao longo de sua jornada, Goku enfrenta desafios cada vez maiores, desde o exército da Red Ribbon até o temível Piccolo Daimaoh. Com seus amigos, como o mestre Kame e Kuririn, Goku desenvolve suas habilidades de luta e descobre sua verdadeira identidade como um Saiyajin. Dragon Ball clássico não é apenas uma história de batalhas épicas, mas também uma narrativa sobre coragem, amizade e superação, que continua a inspirar e encantar fãs de todas as idades até os dias de hoje.</p>
+        <!-- Saga Dragon Ball Z -->
         <ul>
             <li>Saga Dragon Ball Z</li>
         </ul>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball Z, criado em 1989, expande ainda mais o universo criado por Akira Toriyama, levando os fãs a uma emocionante jornada de ação e aventura. Nesta saga, acompanhamos o amadurecimento de Goku e seus amigos enquanto enfrentam ameaças cósmicas que colocam o destino do universo em jogo. À medida que a história avança, somos apresentados a novos personagens poderosos, como Vegeta, Piccolo, Gohan e muitos outros, cada um com suas próprias habilidades e desafios a superar. A amizade e a união entre esses heróis se mostram fundamentais para sua sobrevivência em face do perigo iminente. Dragon Ball Z não se trata apenas de batalhas épicas e confrontos explosivos; também explora temas mais profundos, como redenção, sacrifício e a natureza da própria humanidade. Os momentos de emoção e drama são tão impactantes quanto as cenas de ação intensa. Além disso, a série introduz elementos de ficção científica e mitologia que adicionam camadas adicionais à rica tapeçaria do universo de Dragon Ball. A exploração de diferentes planetas, raças alienígenas e tecnologias avançadas amplia ainda mais os horizontes da narrativa.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball Z, criado em 1989, expande ainda mais o universo criado por Akira Toriyama, levando os fãs a uma emocionante jornada de ação e aventura. Nesta saga, acompanhamos o amadurecimento de Goku e seus amigos enquanto enfrentam ameaças cósmicas que colocam o destino do universo em jogo. À medida que a história avança, somos apresentados a novos personagens poderosos, como Vegeta, Piccolo, Gohan e muitos outros, cada um com suas próprias habilidades e desafios a superar. A amizade e a união entre esses heróis se mostram fundamentais para sua sobrevivência em face do perigo iminente. Dragon Ball Z não se trata apenas de batalhas épicas e confrontos explosivos; também explora temas mais profundos, como redenção, sacrifício e a natureza da própria humanidade. Os momentos de emoção e drama são tão impactantes quanto as cenas de ação intensa. Além disso, a série introduz elementos de ficção científica e mitologia que adicionam camadas adicionais à rica tapeçaria do universo de Dragon Ball. A exploração de diferentes planetas, raças alienígenas e tecnologias avançadas amplia ainda mais os horizontes da narrativa.</p>
+            <div class="boxImg">
+                <img src="img/DragonBallZ.png" alt="Dragon Ball Z">
             </div>
-            <img class="img" src="imagens/dragon_ball_z.png" alt="Dragon Ball Z">
-        </div>
-        <p class="p2">Dragon Ball Z continua a ser uma das séries de anime mais amadas e influentes de todos os tempos, deixando um legado duradouro na cultura pop e inspirando inúmeras adaptações, continuações e homenagens ao longo dos anos. Sua popularidade transcende gerações e fronteiras, garantindo seu lugar como um marco na história da animação japonesa. Desde a chegada dos Saiyajins até os confrontos contra vilões como Freeza, Cell e Majin Buu, cada arco traz batalhas épicas e momentos emocionantes. Além disso, Dragon Ball Z explora temas mais profundos, como a importância da família, o poder da determinação e a busca pela superação pessoal. Com sua combinação única de ação empolgante e personagens cativantes, esta série continua a ser uma fonte de inspiração para fãs de todo o mundo, transcendendo gerações e culturas.</p>
+            </div>
+        <p class="paragrafo2">Dragon Ball Z continua a ser uma das séries de anime mais amadas e influentes de todos os tempos, deixando um legado duradouro na cultura pop e inspirando inúmeras adaptações, continuações e homenagens ao longo dos anos. Sua popularidade transcende gerações e fronteiras, garantindo seu lugar como um marco na história da animação japonesa. Desde a chegada dos Saiyajins até os confrontos contra vilões como Freeza, Cell e Majin Buu, cada arco traz batalhas épicas e momentos emocionantes. Além disso, Dragon Ball Z explora temas mais profundos, como a importância da família, o poder da determinação e a busca pela superação pessoal. Com sua combinação única de ação empolgante e personagens cativantes, esta série continua a ser uma fonte de inspiração para fãs de todo o mundo, transcendendo gerações e culturas.</p>
+        <!-- Saga Dragon Ball GT -->
         <ul>
             <li>Saga Dragon Ball GT</li>
         </ul>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball GT, criado em 1996, marca uma fase única na história da franquia, trazendo uma jornada emocionante e repleta de desafios para Goku e seus amigos. Na série, somos apresentados a uma trama que se desenrola após os eventos de Dragon Ball Z, onde Goku se encontra transformado novamente em criança através de um desejo feito nas Esferas do Dragão. A transformação de Goku em criança traz novos e interessantes desenvolvimentos para a narrativa, pois ele precisa redescobrir suas habilidades e enfrentar adversários poderosos enquanto assume o papel de um guerreiro novamente. Além disso, seus amigos, incluindo Pan e Trunks, desempenham papéis essenciais na jornada para ajudá-lo a recuperar sua forma adulta. Em Dragon Ball GT, os personagens exploram não apenas a Terra, mas também outros planetas e dimensões, levando a aventuras emocionantes e encontros surpreendentes. A série apresenta uma variedade de vilões formidáveis, incluindo os poderosos Shadow Dragons, que representam uma ameaça ao equilíbrio do universo. Embora Dragon Ball GT tenha recebido opiniões diversas dos fãs, sua contribuição para o cânone de Dragon Ball não pode ser subestimada.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball GT, criado em 1996, marca uma fase única na história da franquia, trazendo uma jornada emocionante e repleta de desafios para Goku e seus amigos. Na série, somos apresentados a uma trama que se desenrola após os eventos de Dragon Ball Z, onde Goku se encontra transformado novamente em criança através de um desejo feito nas Esferas do Dragão. A transformação de Goku em criança traz novos e interessantes desenvolvimentos para a narrativa, pois ele precisa redescobrir suas habilidades e enfrentar adversários poderosos enquanto assume o papel de um guerreiro novamente. Além disso, seus amigos, incluindo Pan e Trunks, desempenham papéis essenciais na jornada para ajudá-lo a recuperar sua forma adulta. Em Dragon Ball GT, os personagens exploram não apenas a Terra, mas também outros planetas e dimensões, levando a aventuras emocionantes e encontros surpreendentes. A série apresenta uma variedade de vilões formidáveis, incluindo os poderosos Shadow Dragons, que representam uma ameaça ao equilíbrio do universo. Embora Dragon Ball GT tenha recebido opiniões diversas dos fãs, sua contribuição para o cânone de Dragon Ball não pode ser subestimada.</p>
+            <div class="boxImg">
+                <img src="img/DragonBallGT.png" alt="Dragon Ball GT">
             </div>
-            <img class="img" src="imagens/dragon_ball_GT2.png" alt="Dragon Ball GT">
         </div>
-        <p class="p2">A série expande o lore da franquia, introduz novos conceitos e personagens memoráveis, e oferece uma visão única do universo de Dragon Ball. Apesar de suas controvérsias, Dragon Ball GT continua a ser uma parte importante da saga Dragon Ball, demonstrando a duradoura popularidade e influência da franquia ao longo dos anos. Assim, ele embarca em uma missão pelo espaço em busca das Esferas do Dragão Negras, enfrentando poderosos vilões como Baby, Super 17 e Omega Shenron. Apesar das críticas em relação à sua continuidade em relação às obras anteriores, Dragon Ball GT ainda conquista um lugar especial no coração dos fãs, proporcionando momentos de ação intensa e explorando novos aspectos do universo Dragon Ball.</p>
+        <p class="paragrafo2">A série expande o lore da franquia, introduz novos conceitos e personagens memoráveis, e oferece uma visão única do universo de Dragon Ball. Apesar de suas controvérsias, Dragon Ball GT continua a ser uma parte importante da saga Dragon Ball, demonstrando a duradoura popularidade e influência da franquia ao longo dos anos. Assim, ele embarca em uma missão pelo espaço em busca das Esferas do Dragão Negras, enfrentando poderosos vilões como Baby, Super 17 e Omega Shenron. Apesar das críticas em relação à sua continuidade em relação às obras anteriores, Dragon Ball GT ainda conquista um lugar especial no coração dos fãs, proporcionando momentos de ação intensa e explorando novos aspectos do universo Dragon Ball.</p>
+        <!-- Saga Dragon Ball Super -->
         <ul>
             <li>Saga Dragon Ball Super</li>
         </ul>
-        <div class="display">
-            <div class="p">
-                <p>Dragon Ball Super, criado em 2015, leva os fãs a uma nova era de aventura e poder, expandindo ainda mais o universo já vasto de Dragon Ball. A história começa após os eventos de Dragon Ball Z, com Goku e seus amigos desfrutando de um período de relativa paz. No entanto, a tranquilidade é interrompida quando uma ameaça cósmica emerge, desafiando não apenas a Terra, mas todo o universo conhecido. Goku e seus aliados, incluindo Vegeta, Piccolo, Gohan e outros, são mais uma vez chamados a se levantar e enfrentar esse novo perigo. Dragon Ball Super apresenta novos mundos, personagens e poderes além do que os fãs já viram antes. Além disso, a série explora ainda mais o multiverso de Dragon Ball, introduzindo novos deuses da destruição, anjos e formas de transformação para nossos heróis. Uma das características mais marcantes de Dragon Ball Super é o Torneio do Poder, um épico confronto entre os universos, onde os lutadores competem pela sobrevivência de seus próprios mundos.</p>
+        <div class="boxFlex">
+            <p class="paragrafo">Dragon Ball Super, criado em 2015, leva os fãs a uma nova era de aventura e poder, expandindo ainda mais o universo já vasto de Dragon Ball. A história começa após os eventos de Dragon Ball Z, com Goku e seus amigos desfrutando de um período de relativa paz. No entanto, a tranquilidade é interrompida quando uma ameaça cósmica emerge, desafiando não apenas a Terra, mas todo o universo conhecido. Goku e seus aliados, incluindo Vegeta, Piccolo, Gohan e outros, são mais uma vez chamados a se levantar e enfrentar esse novo perigo. Dragon Ball Super apresenta novos mundos, personagens e poderes além do que os fãs já viram antes. Além disso, a série explora ainda mais o multiverso de Dragon Ball, introduzindo novos deuses da destruição, anjos e formas de transformação para nossos heróis. Uma das características mais marcantes de Dragon Ball Super é o Torneio do Poder, um épico confronto entre os universos, onde os lutadores competem pela sobrevivência de seus próprios mundos.</p>
+            <div class="boxImg">
+                <img src="img/DragonBallSuper.png" alt="Dragon Ball Super">
             </div>
-            <img class="img" src="imagens/dragon_ball_super.png" alt="Dragon Ball Super">
         </div>
-        <p class="p2">Este arco emocionante apresenta batalhas espetaculares e revelações chocantes que mantêm os fãs à beira de seus assentos. Apesar das críticas iniciais, Dragon Ball Super conquistou rapidamente um lugar especial nos corações dos fãs, oferecendo uma mistura de nostalgia e novidade que cativa tanto os antigos quanto os novos admiradores da série. Sua contribuição para o legado de Dragon Ball é inegável, garantindo que a franquia continue a prosperar por muitos anos vindouros. No entanto, novas ameaças surgem, incluindo deuses da destruição, universos paralelos e até mesmo uma versão maligna de Goku, conhecida como Goku Black. A série apresenta novos personagens, como o poderoso Beerus e o misterioso Whis, além de explorar o multiverso e os torneios entre universos. Com animação de alta qualidade e batalhas épicas, Dragon Ball Super continua a emocionar os fãs enquanto mantém vivo o espírito de aventura e superação que tornou a franquia tão amada em todo o mundo.</p>
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div class="mangas">
+        <p class="paragrafo2">Este arco emocionante apresenta batalhas espetaculares e revelações chocantes que mantêm os fãs à beira de seus assentos. Apesar das críticas iniciais, Dragon Ball Super conquistou rapidamente um lugar especial nos corações dos fãs, oferecendo uma mistura de nostalgia e novidade que cativa tanto os antigos quanto os novos admiradores da série. Sua contribuição para o legado de Dragon Ball é inegável, garantindo que a franquia continue a prosperar por muitos anos vindouros. No entanto, novas ameaças surgem, incluindo deuses da destruição, universos paralelos e até mesmo uma versão maligna de Goku, conhecida como Goku Black. A série apresenta novos personagens, como o poderoso Beerus e o misterioso Whis, além de explorar o multiverso e os torneios entre universos. Com animação de alta qualidade e batalhas épicas, Dragon Ball Super continua a emocionar os fãs enquanto mantém vivo o espírito de aventura e superação que tornou a franquia tão amada em todo o mundo.</p>
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Fala um Pouco sobre os Magas, e um Link Que Leva Para Outra Página Que Mostrará Alguns Exemplares -->
+    <section class="mangas">
         <h2>Mangas</h2>
-        <p class="p2">Akira Toriyama, o criador de Dragon Ball, produziu um total de 42 volumes de mangá. A série original de Dragon Ball consiste em 16 volumes, enquanto a sequência, Dragon Ball Z, compreende 26 volumes. Cada volume é uma coleção de capítulos individuais publicados anteriormente em revistas semanais de mangá, como a famosa Weekly Shonen Jump. Esses capítulos foram então compilados e lançados como volumes tankōbon, tornando mais fácil para os fãs colecionarem e relerem a série em sua totalidade. Além dos volumes principais de Dragon Ball e Dragon Ball Z, Toriyama também produziu vários outros mangás relacionados, incluindo Dragon Ball Super, Dragon Ball GT e vários one-shots e histórias curtas ambientadas no universo de Dragon Ball. Através de suas ilustrações vibrantes e narrativa envolvente, os mangás de Dragon Ball conquistaram uma base de fãs global e se tornaram uma parte fundamental da cultura pop japonesa e mundial. Seu impacto duradouro é testemunhado pela contínua popularidade e influência da franquia ao longo das décadas. Se quiser saber mais detalhes sobre os mangás de Dragon Ball, clique no link abaixo! <br><a class="a" href="manga.html" target="_blank">Mangás</a></p>
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div class="filmes">
+        <p class="paragrafo2">Akira Toriyama, o criador de Dragon Ball, produziu um total de 42 volumes de mangá. A série original de Dragon Ball consiste em 16 volumes, enquanto a sequência, Dragon Ball Z, compreende 26 volumes. Cada volume é uma coleção de capítulos individuais publicados anteriormente em revistas semanais de mangá, como a famosa Weekly Shonen Jump. Esses capítulos foram então compilados e lançados como volumes tankōbon, tornando mais fácil para os fãs colecionarem e relerem a série em sua totalidade. Além dos volumes principais de Dragon Ball e Dragon Ball Z, Toriyama também produziu vários outros mangás relacionados, incluindo Dragon Ball Super, Dragon Ball GT e vários one-shots e histórias curtas ambientadas no universo de Dragon Ball. Através de suas ilustrações vibrantes e narrativa envolvente, os mangás de Dragon Ball conquistaram uma base de fãs global e se tornaram uma parte fundamental da cultura pop japonesa e mundial. Seu impacto duradouro é testemunhado pela contínua popularidade e influência da franquia ao longo das décadas. Se quiser saber mais detalhes sobre os mangás de Dragon Ball, clique no link abaixo! <br><a class="proximaPagina" href="manga.html" target="_blank">Mangás</a></p>
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Fala um Pouco sobre os Filmes, e um Link Que Leva Para Outra Página Que Mostrará Exemplares Que Eu mais Gostei kk -->
+    <section class="filmes">
         <h2>Filmes</h2>
-        <p class="p2">Até o momento, a franquia Dragon Ball gerou uma impressionante quantidade de filmes, totalizando mais de 20 produções, incluindo longas-metragens e especiais de televisão. Esses filmes expandem o universo da série, apresentando novos vilões, aventuras emocionantes e batalhas épicas que continuam a cativar os fãs ao redor do mundo. Cada filme oferece uma experiência única, seja explorando novos aspectos do multiverso de Dragon Ball, introduzindo personagens inéditos ou expandindo os arcos de personagens queridos pelos fãs. Além disso, muitos dos filmes apresentam animações de alta qualidade e trilhas sonoras emocionantes que enriquecem ainda mais a experiência do espectador. Entre os filmes mais populares da franquia estão "Dragon Ball Z: A Batalha dos Deuses" e "Dragon Ball Super: Broly", que foram bem recebidos tanto pela crítica quanto pelo público e se tornaram sucessos de bilheteria ao redor do mundo. Se você deseja mergulhar ainda mais fundo no emocionante mundo dos filmes de Dragon Ball, clique no link abaixo para saber mais detalhes sobre cada produção e descubra novas aventuras que aguardam você! <br><a class="a" href="filmes.html" target="_blank">Filmes</a></p>
-    </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
+        <p class="paragrafo2">Até o momento, a franquia Dragon Ball gerou uma impressionante quantidade de filmes, totalizando mais de 20 produções, incluindo longas-metragens e especiais de televisão. Esses filmes expandem o universo da série, apresentando novos vilões, aventuras emocionantes e batalhas épicas que continuam a cativar os fãs ao redor do mundo. Cada filme oferece uma experiência única, seja explorando novos aspectos do multiverso de Dragon Ball, introduzindo personagens inéditos ou expandindo os arcos de personagens queridos pelos fãs. Além disso, muitos dos filmes apresentam animações de alta qualidade e trilhas sonoras emocionantes que enriquecem ainda mais a experiência do espectador. Entre os filmes mais populares da franquia estão "Dragon Ball Z: A Batalha dos Deuses" e "Dragon Ball Super: Broly", que foram bem recebidos tanto pela crítica quanto pelo público e se tornaram sucessos de bilheteria ao redor do mundo. Se você deseja mergulhar ainda mais fundo no emocionante mundo dos filmes de Dragon Ball, clique no link abaixo para saber mais detalhes sobre cada produção e descubra novas aventuras que aguardam você! <br><a class="proximaPagina" href="filme.html" target="_blank">Filmes</a></p>
+    </section>
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Que Fala um Pouco sobre as Músicas, e um Link Que Leva Para Outra Página Que Mostrará as Aberturas e Fechamentos de Saga -->
     <div class="musicas">
         <h2>Musicas</h2>
-        <p class="p2">As músicas do Dragon Ball são uma parte essencial da experiência dessa icônica série de anime. Desde as energéticas aberturas como "Cha-La Head-Cha-La" e "We Gotta Power" até as emocionantes trilhas sonoras de fundo, as composições são memoráveis e cativantes. Elas não apenas complementam as cenas de ação intensa e drama, mas também ajudam a transmitir a emoção e a intensidade das batalhas épicas e das jornadas dos personagens, clique no link abaixo e descubra novas aventuras que aguardam você! <br><a class="a" href="musicas.html" target="_blank">Músicas</a></p>
+        <p class="paragrafo2">As músicas do Dragon Ball são uma parte essencial da experiência dessa icônica série de anime. Desde as energéticas aberturas como "Cha-La Head-Cha-La" e "We Gotta Power" até as emocionantes trilhas sonoras de fundo, as composições são memoráveis e cativantes. Elas não apenas complementam as cenas de ação intensa e drama, mas também ajudam a transmitir a emoção e a intensidade das batalhas épicas e das jornadas dos personagens, clique no link abaixo e descubra novas aventuras que aguardam você! <br><a class="proximaPagina" href="musica.html" target="_blank">Músicas</a></p>
     </div>
-    <img class="nuvens" src="imagens/nuvem2-removebg-preview.png" alt="Nuvens">
-    <div id="personagens" class="personagens">
-        <h2 class="h2">Personagens</h2>
-        <div class="personagens-display">
-            <div class="personagens-imagem">
-                <img src="imagens/Goku9-removebg-preview.png" alt="Goku" id="Goku">
-                <div class="personagens-caixa" onclick="toggleImage('Goku')">
+    <!-- Imagem Que Faz a Quebra de Sessões -->
+    <img class="nuven" src="img/NuvemDivisao.png" alt="Nuvens">
+    <!-- Seção Com Caixas Que Quando Clica Aparece o Personagem Nomeado -->
+    <section id="personagens" class="personagens">
+        <h2>Personagens</h2>
+        <!-- Div Para Deixar as Caixas Flexiveis -->
+        <div class="container">
+            <div class="boxPersonagens">
+                <img src="img/GokuPersonagem.png" alt="Goku" id="Goku">
+                <div class="boxPersonagens2" onclick="toggleImage('Goku')">
                     <p>Goku</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/Vegeta3-removebg-preview.png" alt="Vegeta" id="Vegeta">
-                <div class="personagens-caixa" onclick="toggleImage('Vegeta')">
+            <div class="boxPersonagens">
+                <img src="img/Vegeta.png" alt="Vegeta" id="Vegeta">
+                <div class="boxPersonagens2" onclick="toggleImage('Vegeta')">
                     <p>Vegeta</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/gohan-removebg-preview.png" alt="Gohan" id="Gohan">
-                <div class="personagens-caixa" onclick="toggleImage('Gohan')">
+            <div class="boxPersonagens">
+                <img src="img/Gohan.png" alt="Gohan" id="Gohan">
+                <div class="boxPersonagens2" onclick="toggleImage('Gohan')">
                     <p>Gohan</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/piccolo-removebg-preview.png" alt="Piccolo" id="Piccolo">
-                <div class="personagens-caixa" onclick="toggleImage('Piccolo')">
+            <div class="boxPersonagens">
+                <img src="img/Piccolo.png" alt="Piccolo" id="Piccolo">
+                <div class="boxPersonagens2" onclick="toggleImage('Piccolo')">
                     <p>Piccolo</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/Kuririn2.png" alt="Kuririn" id="Kuririn">
-                <div class="personagens-caixa" onclick="toggleImage('Kuririn')">
+            <div class="boxPersonagens">
+                <img src="img/Kuririn.png" alt="Kuririn" id="Kuririn">
+                <div class="boxPersonagens2" onclick="toggleImage('Kuririn')">
                     <p>Kuririn</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/Trunks4.png" alt="Trunks" id="Trunks">
-                <div class="personagens-caixa" onclick="toggleImage('Trunks')">
+            <div class="boxPersonagens">
+                <img src="img/Trunks.png" alt="Trunks" id="Trunks">
+                <div class="boxPersonagens2" onclick="toggleImage('Trunks')">
                     <p>Trunks</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/Bills5-removebg-preview2.png" alt="Bills" id="Bills">
-                <div class="personagens-caixa" onclick="toggleImage('Bills')">
-                    <p style="margin-left: -10px;">Beerus</p>
+            <div class="boxPersonagens">
+                <img src="img/Beerus.png" alt="Beerus" id="Beerus">
+                <div class="boxPersonagens2" onclick="toggleImage('Beerus')">
+                    <p>Beerus</p>
                 </div>
             </div>
-            <div class="personagens-imagem">
-                <img src="imagens/Mestre_Kame5-removebg-preview.png" alt="Mestre Kame" id="Mestre_Kame">
-                <div class="personagens-caixa" onclick="toggleImage('Mestre_Kame')">
+            <div class="boxPersonagens">
+                <img src="img/MestreKame.png" alt="Mestre Kame" id="Mestre_Kame">
+                <div class="boxPersonagens2" onclick="toggleImage('Mestre_Kame')">
                     <p>Mestre Kame</p>
                 </div>
             </div>            
         </div>
-        <p class="paragrafo-personagens">Clique no link ao lado e descubra novas aventuras que aguardam você! <a class="a" href="personagens.html" target="_blank">Personagens</a></p>
-        <p class="paragrafo-sobre-mim"><b style="font-size: 15px;">Este site foi Criado por mim, um fã dessa grande obra chamada Dragon Ball.</b></p>
-    </div>
+        <p class="paragrafo">Clique no link ao lado e descubra novas aventuras que aguardam você! <a class="proximaPagina" href="personagen.html" target="_blank">Personagens</a></p>
+        <p class="paragrafo2"><b>Este site foi Criado por mim, um fã dessa grande obra chamada Dragon Ball.</b></p>
+    </section>
+    <!-- Botão Voltar ao Topo -->
+    <button id="btnTopo"><img src="img/SetaParaSima.png" alt="Seta Para Cima"></button>
+    <!-- Rodapé da Página Aqui tem os Direitos Autorais e Meu E-mail Para Contato e Quando Clica na Imagem Ela te Direciona Para a Página de E-mail -->
     <footer>
-        <p class="paragrafo-copy">&copy; Dragon-Ball-Site.com.br 2024</p>
-        <div class="footer-hotmail">
-            <a href="https://outlook.live.com/" target="_blank"><img src="imagens/enviar.png" alt="icon-hotmail"></a>
-            <p class="paragrafo-hotmail">dragon_ball_site@hotmail.com</p>
+        <p class="copyright">&copy; Dragon-Ball-Site.com.br 2024</p>
+        <div class="Email">
+            <a href="https://outlook.live.com/" target="_blank"><img class="imgEmail" src="img/E-mail.png" alt="Email"></a>
+            <p class="paragrafoEmail">dragon-ball-site@outlook.com</p>
         </div>
     </footer>
+    <!-- Linkando o JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

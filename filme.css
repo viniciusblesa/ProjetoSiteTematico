@@ -1,0 +1,160 @@
+/* Estilo da Página */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilo do Cabesalho Com Suas Propriedades de Alinhamento */
+header{
+    height: 100px;
+}
+header a img{
+    margin: 5px 0 0 50px;
+    width: 100px;
+}
+/* Estilo da Seção de Filmes Com Alinhamento, Tamanho e Perfumarias */
+.filmes{
+    margin: 100px 0 100px 0;
+    padding: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px yellow;
+}
+h1{
+   text-align: center;
+}
+.filmes h2{
+    margin: 50px 0;
+    color: orange;
+}
+.container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.boxFlex{
+    margin-right: 200px;
+}
+.filmes ul li{
+    margin-left: 20px;
+}
+.filmes img{
+    margin: 50px 0 0 50px;
+    height: 350px;
+    width: 250px;
+    border-radius: 30px;
+    border: solid 2px black;
+}
+.filmes img:hover{
+    box-shadow: 10px 10px 5px orange;
+}
+.filmes .paragrafo2{
+    margin: 50px 0px 0px 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+/* Propriedades do "hr" que faz a Divição dos Filmes */
+hr{
+    margin: 60px 20px 0 0;
+    height: 5px;
+    border: none;
+    background-color: black;
+}
+/* Estilo do Rotape da Página Com Tamanho e Alinhamento */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+}
+footer .copyright{
+    margin: 50px 0 0 70px;
+}
+footer .Email{
+    display: flex;
+}
+footer .Email a img{
+    margin-top: 45px;
+    height: 30px;
+}
+footer .paragrafoEmail{
+    margin: 50px 70px 0 5px;
+}
+/* Responsividade do Site */
+/* Tablet */
+@media (max-width: 890px){
+    .container{
+        justify-content: space-around;
+    }
+    .boxFlex{
+        margin: 0;
+    }
+    .filmes img{
+        margin: 30px 0 20px 0;
+    }
+}
+/* Celular */
+@media (max-width: 480px){
+    /*  */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header a img{
+        margin: 0;
+    }
+    /*  */
+    .filmes{
+        margin: 50px 0;
+        padding: 50px 15px;
+        border-radius: 40px;
+    }
+    /* Cada box de filme vira coluna. UL fica à esquerda. IMAGEM fica centralizada */
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxFlex{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .boxFlex ul{
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .boxFlex img{
+        display: block;
+        margin: 20px auto;
+        border: solid 3px black;
+    }
+    /*  */
+    .filmes .paragrafo2{
+        margin: 0;
+    }
+    /*  */
+    hr{
+        margin: 25px 0 0 0;
+    }
+    /*  */
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 0;
+    }
+    footer .Email a img{
+        margin-top: 0;
+        height: 30px;
+    }
+    footer .paragrafoEmail{
+        margin: 6px 0 0 5px;
+    }
+}

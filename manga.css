@@ -1,29 +1,35 @@
+/* Estilo da Página */
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* Estilo do Cabesalho Com Suas Propriedades de Alinhamento */
 header{
-    display: flex;
     height: 100px;
-    border-radius: 0 0 100px 100px;
-    background-image: url(imagens/baner4.png);
-    background-repeat: repeat;
-    background-size: 1685px;
-    justify-content: space-between;
 }
 header a img{
-    width: 100px;
     margin: 5px 0 0 50px;
+    width: 100px;
 }
+/* Estilo da Seção de Mangas Com Alinhamento, Tamanho e Perfumarias */
 .mangas{
     margin: 100px 0 100px 0;
     padding: 100px;
     border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
+h1{
+   text-align: center;
+}
 .mangas h2{
     margin: 50px 0;
     color: orange;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .mangas ul li{
     margin-left: 20px;
@@ -33,63 +39,112 @@ header a img{
     height: 350px;
     width: 250px;
     border-radius: 30px;
+    border: solid 2px black;
 }
-.mangas-display{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.mangas img:hover{
+    box-shadow: 10px 10px 5px orange;
 }
+.mangas .paragrafo2{
+    margin: 50px 0px 0px 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+/* Propriedades do "hr" que faz a Divição dos Mangas */
 hr{
     margin: 40px 20px 0 0;
     height: 5px;
     border: none;
     background-color: black;
 }
-.mangas .paragrafo-sobre-mim{
-    margin: 50px 0px 0px 10px;
-    text-align: justify;
-}
+/* Estilo do Rotape da Página Com Tamanho e Alinhamento */
 footer{
-    height: 100px;
-    display: flex;flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
-    border-radius: 100px 100px 0 0;
-    background-image: url(imagens/baner4.png);
-    background-repeat: repeat;
-    background-size: 1685px;
+    flex-wrap: wrap;
+    height: 100px;
 }
-footer .paragrafo-copy{
+footer .copyright{
     margin: 50px 0 0 70px;
 }
-footer .footer-hotmail{
+footer .Email{
     display: flex;
 }
-footer .paragrafo-hotmail{
-    margin: 50px 70px 0 5px;
-}
-footer .footer-hotmail a img{
+footer .Email a img{
     margin-top: 45px;
     height: 30px;
 }
-@media (max-width: 500px){
-    .mangas{
-        padding: 70px;
-    }
-    .mangas ul li{
-        margin-top: 30px;
-    }
+footer .paragrafoEmail{
+    margin: 50px 70px 0 5px;
+}
+/* Responsividade do Site */
+/* Tablet */
+@media (max-width: 890px){
     .mangas img{
-        margin: 20px 0 0 0;
-    }
-    .mangas hr{
-        margin: 50px -20px 0 -20px;
+        margin: 30px 0 20px 0;
     }
 }
-@media (max-width: 496px){
-    footer{
-        height: 130px;
+/* Celular */
+@media (max-width: 480px){
+    /*  */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    footer .footer-hotmail{
-        margin: -60px 0 0 70px;
+    header a img{
+        margin: 0;
+    }
+    /*  */
+    .mangas{
+        margin: 50px 0 50px 0;
+        padding: 50px 15px 50px 15px;
+        border-radius: 40px;
+    }
+    /* Cada box de filme vira coluna. UL fica à esquerda. IMAGEM fica centralizada */
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxFlex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .boxFlex ul{
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .boxFlex img{
+        display: block;
+        margin: 20px auto;
+        border: solid 3px black;
+    }
+    /*  */
+    .mangas .paragrafo2{
+        margin: 0;
+    }
+    /*  */
+    hr{
+        margin: 25px 0 0 0;
+    }
+    /*  */
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 0 0 0 0;
+    }
+    footer .Email a img{
+        margin-top: 0;
+        height: 30px;
+    }
+    footer .paragrafoEmail{
+        margin: 6px 0 0 5px;
     }
 }

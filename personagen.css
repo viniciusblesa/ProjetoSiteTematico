@@ -1,0 +1,136 @@
+/* Estilo da Página */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilo do Cabesalho Com Suas Propriedades de Alinhamento */
+header{
+    height: 100px;
+    
+}
+header a img{
+    margin: 5px 0 0 50px;
+    width: 100px;
+}
+/* Estilo da Seção de Mangas Com Alinhamento, Tamanho e Perfumarias */
+.personagens{
+    margin: 100px 0 100px 0;
+    padding: 50px 0 130px 0;
+    border-radius: 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.personagens h1{
+   text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boxPersonagens{
+    position: relative;
+    margin: 30px 70px 0 70px;
+    padding: 20px;
+    height: 500px;
+    width: 200px;
+}
+.boxPersonagens img{
+    display: none; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+}
+.boxPersonagens2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    border-radius: 40px;
+    z-index: 0;
+    cursor: pointer;
+    background-color: orange;
+}
+.boxPersonagens2:hover{
+    background-color: rgba(255, 166, 0, 0.767);
+    box-shadow: 0 0 30px orange;
+}
+.boxPersonagens2:active{
+    background-color: orange;
+}
+.boxPersonagens2 p{
+    font-size: 30px;
+    color: white;
+}
+.personagens .paragrafo2{
+    margin: 50px 30px 0px 100px;
+    font-size: 15px;
+    text-align: justify;
+}
+/* Estilo do Rotape da Página Com Tamanho e Alinhamento */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+}
+footer .copyright{
+    margin: 50px 0 0 70px;
+}
+footer .Email{
+    display: flex;
+}
+footer .Email a img{
+    margin-top: 45px;
+    height: 30px;
+}
+footer .paragrafoEmail{
+    margin: 50px 70px 0 5px;
+}
+/* Responsividade do Site */
+/* Celular */
+@media (max-width: 480px){
+    /*  */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header a img{
+        margin: 0;
+    }
+    /*  */
+    .personagens{
+        margin: 50px 0 50px 0;
+        padding: 50px 15px 50px 15px;
+        border-radius: 40px;
+    }
+    /*  */
+    .boxPersonagens{
+        margin: 30px auto;
+        padding: 0;
+    }
+    /*  */
+    .personagens .paragrafo2{
+        margin: 40px 0 0 0;
+    }
+    /*  */
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 0 0 0 0;
+    }
+    footer .Email a img{
+        margin-top: 0;
+        height: 30px;
+    }
+    footer .paragrafoEmail{
+        margin: 6px 0 0 5px;
+    }
+}

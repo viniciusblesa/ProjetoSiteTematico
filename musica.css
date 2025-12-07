@@ -1,0 +1,164 @@
+/* Estilo da Página */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilo do Cabesalho Com Suas Propriedades de Alinhamento */
+header{
+    height: 100px;
+}
+header a img{
+    margin: 5px 0 0 50px;
+    width: 100px;
+}
+/* Estilo da Seção de Musicas Com Alinhamento, Tamanho e Perfumarias */
+.musicas{
+    margin: 100px 0 100px 0;
+    padding: 50px 0 100px 50px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px yellow;
+}
+.musicas h1{
+    text-align: center;
+}
+.musicas h2{
+    margin: 60px 0 40px 40px;
+    color: orange;
+}
+.musicas .container{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.musicas .container ul{
+    text-align: left;
+    margin: 0 0 0 120px;
+    padding-left: 0;
+    width: 100%;
+}
+.musicas .container video{
+    margin: 40px auto;
+    width: 700px;
+    border: solid 4px black;
+    border-radius: 50px;
+}
+.musicas .container video:hover{
+    box-shadow: 10px 10px 5px orange;
+}
+.musicas .paragrafo2{
+    margin: 50px 0px 0px 50px;
+    font-size: 15px;
+    text-align: justify;
+}
+/* Propriedades do "hr" que faz a Divição dos Musicas */
+hr{
+    margin: 60px 60px 0 0;
+    height: 5px;
+    border: none;
+    background-color: black;
+}
+/* Estilo do Rotape da Página Com Tamanho e Alinhamento */
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .copyright{
+    margin: 50px 0 0 70px;
+}
+footer .Email{
+    display: flex;
+}
+footer .Email a img{
+    margin-top: 45px;
+    height: 30px;
+}
+footer .paragrafoEmail{
+    margin: 50px 70px 0 5px;
+}
+/* Responsividade do Site */
+/* Tablet */
+@media (max-width: 890px){
+    .musicas h2{
+        margin: 60px 0 40px 0;
+    }
+    .musicas .container ul{
+        margin: 0 0 0 40px;
+    }
+    .musicas .container video{
+        width: 500px;
+    }
+}
+/* Celular */
+@media (max-width: 480px){
+    /*  */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header a img{
+        margin: 0;
+    }
+    /*  */
+    .musicas{
+        margin: 50px 0;
+        padding: 50px 15px;
+        border-radius: 40px;
+    }
+    /*  */
+    .musicas h2{
+        margin: 40px 0;
+    }
+    /* Cada box de filme vira coluna. UL fica à esquerda. IMAGEM fica centralizada */
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+    }
+    .musicas .container ul{
+        text-align: left;
+        margin: 0;
+        padding-left: 20px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .musicas .container ul li{
+        margin: 0;
+    }
+    .musicas .container video{
+        display: block;
+        margin: 40px auto;
+        width: 250px;
+        border-radius: 25PX;
+
+    }
+    /*  */
+    .musicas .paragrafo2{
+        margin: 0;
+    }
+    /*  */
+    hr{
+        margin: 0;
+    }
+    /*  */
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 0;
+    }
+    footer .Email a img{
+        margin-top: 0;
+        height: 30px;
+    }
+    footer .paragrafoEmail{
+        margin: 6px 0 0 5px;
+    }
+}

@@ -1,369 +1,576 @@
+/* Estilo da Página */
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Estilo do Cabesalho Com Suas Propriedades de Alinhamento e Perfumarias */
 header{
     display: flex;
-    flex-wrap: wrap;
-    border-radius: 0 0 100px 100px;
-    background-image: url(imagens/baner4.png);
-    background-repeat: repeat;
-    background-size: 1685px;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    position: relative;
 }
 header a img{
-    width: 100px;
     margin: 5px 0 0 50px;
+    width: 100px;
 }
-header nav ul li{
+header nav .navlinks li{
     display: inline-block;
-    text-decoration: none;
-    margin: 35px 40px 0 0;
+    margin: 35px 35px 0 0;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
+header nav .navlinks li a{
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
-}
-header nav ul li a:hover{
-    padding: -20px;
+    text-decoration: none;
     border-radius: 15px;
     background-color: orange;
     color: white;
+    border: solid 2px rgba(255, 166, 0, 0.281);
 }
-header nav ul li a:active{
-    padding: 20px;
-    padding: -20px;
-    border-radius: 15px;
+header nav .navlinks li a:hover{
     background-color: rgba(255, 166, 0, 0.281);
-    color: rgb(0, 0, 0);
+    color: black;
+    border: solid 2px orange;
 }
-.principal{
+header nav .navlinks li a:active{
+    background-color: orange;
+    color: white;
+    border: solid 2px rgba(255, 166, 0, 0.281);
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background: orange;
+    transition: 0.3s;
+}
+/* Estilo da Seção de Apresentação Com Alinhamento, Tamanho e Perfumarias */
+.apresentacao{
     display: flex;
+    margin-top: 100px;
     max-width: 100%;
     height: 650px;
-    margin-top: 100px;
     border-radius: 100px;
     background: linear-gradient(to right, orange, white);
     box-shadow: 0 0 100px yellow;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    overflow: hidden;
-    position: relative;
 }
-.principal img {
+.apresentacao img{
     position: absolute;
     right: 100%;
-    animation: moverDaDireitaParaAEsquerda 4s forwards;
+    animation: moverDaEsquerdaParaADireita 4s forwards;
 }
-@keyframes moverDaDireitaParaAEsquerda {
-    from {
+.tituloApresentacao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 90px;
+    width: 55%;
+}
+.tituloApresentacao h1{
+    font-size: 50px;
+}
+.apresentacao img{
+    margin: 100px 0 0 50px;
+}
+@keyframes moverDaEsquerdaParaADireita{
+    from{
         right: 100%;
     }
-    to {
+    to{
         right: 50px;
     }
 }
-.titulo{
-    width: 55%;
-}
-.titulo h1{
-    margin: 270px 0 0 150px;
-    width: 100%;
-    font-size: 50px;
-}
-.principal img{
-    margin: 100px 0 0 50px;
-}
-.nuvens{
+/* Propriedades da Imagem de Quebra de Seção */
+.nuven{
     height: 100px;
     width: 100%;
 }
+/* Estilo da Seção de História Com Suas Propriedades de Tamanho, Alinhamento e Perfumarias */
 .historia{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
-}
-.display{
-    display: flex;
-    flex-wrap: wrap;    
-}
-.display .img{
-    margin: 0 auto;
 }
 h2{
     font-size: 40px;
 }
-.p{
-    padding-top: 60px;
-    width: 60%;
-    text-align: justify;
-    font-size: 20px;
+.boxFlex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.p2{
-    margin: 50px 0 30px 0;
-    text-align: justify;
-    font-size: 20px;
+.boxFlex .boxImg{
+    margin: 50px 0 0 50px;
 }
-.img{
-    width: 200px;
+.boxFlex img{
+    height: 300px;
     border-radius: 30px;
 }
+.boxFlex img:hover{
+    box-shadow: 10px 10px 5px orange;
+}
+.paragrafo{
+    padding-top: 60px;
+    width: 75%;
+    font-size: 20px;
+    text-align: justify;
+}
+.paragrafo2{
+    margin: 50px 0 30px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+/* Estilo da Seção do Enredo Com alinhamento e Perfumarias */
 .enredo{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
+/* Estilo da Seção das Sagas Com alinhamento, Tamanho e Perfumarias */
 .sagas{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
-.sagas ul li{
+.sagas .navlinks li{
     margin: 50px 0 0 20px;
     font-size: 20px;
     font-weight: bold;
 }
+/* Estilo da Seção dos Magas Com alinhamento e Perfumarias */
 .mangas{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
-.a{
-    color: orange;
-    font-size: 30px;
-}
+/* Estilo da Seção dos Filmes Com alinhamento e Perfumarias */
 .filmes{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
+/* Estilo da Seção das Músicas Com alinhamento e Perfumarias */
 .musicas{
-    border-radius: 100px;
     padding: 50px 100px 50px 100px;
+    border-radius: 100px;
     box-shadow: 0 0 100px yellow;
 }
+/* Estilo da Seção de Personagens Com alinhamento, Tamanho e Perfumarias */
 .personagens{
-    border-radius: 100px;
     margin-bottom: 100px;
     padding: 50px 0 130px 0;
+    border-radius: 100px;
     box-shadow: 0 5px 100px yellow;
 }
-.personagens .h2{
+.personagens h2{
     margin: 50px 0 20px 100px;
 }
-.personagens-display{
+.container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.personagens-imagem{
-    width: 200px;
-    height: 500px;
+.boxPersonagens{
     margin: 30px 70px 0 70px;
-    padding: 0;
+    height: 500px;
+    width: 200px;
     position: relative;
     padding: 20px;
 }
-.personagens-imagem img{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.boxPersonagens img{
     display: none; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
     z-index: 1;
 }
-.personagens-caixa{
-    width: 200px;
-    height: 200px;
-    background-color: orange;
+.boxPersonagens2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    height: 200px;
+    width: 200px;
     bottom: 0;
     border-radius: 40px;
-    cursor: pointer;
     z-index: 0;
-}
-.personagens-caixa:hover{
-    background-color: rgba(255, 166, 0, 0.767);
-}
-.personagens-caixa:active{
+    cursor: pointer;
     background-color: orange;
 }
-.personagens-caixa p{
-    padding: 80px 0 0 60px;
-    color: white;
+.boxPersonagens2:hover{
+    background-color: rgba(255, 166, 0, 0.767);
+    box-shadow: 0 0 30px orange;
+}
+.boxPersonagens2:active{
+    background-color: orange;
+}
+.boxPersonagens2 p{
     font-size: 30px;
+    color: white;
 }
-.personagens .paragrafo-personagens{
+.personagens .paragrafo{
     margin: 100px 40px 0px 100px;
-    text-align: justify;
     font-size: 20px;
-}
-.personagens .paragrafo-sobre-mim{
-    margin: 20px 0px 0px 100px;
     text-align: justify;
 }
-footer{
-    height: 100px;
-    display: flex;flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 100px 100px 0 0;
-    background-image: url(imagens/baner4.png);
-    background-repeat: repeat;
-    background-size: 1685px;
+.personagens .paragrafo2{
+    margin: 20px 0px 0px 100px;
+    font-size: 15px;
+    text-align: justify;
 }
-footer .paragrafo-copy{
+/* Estilo Dos Links Que Levam Para as Novas Aventuras */
+.proximaPagina{
+    font-size: 30px;
+    color: orange;
+}
+/* Estilo do Rotape da Página Com Tamanho e Alinhamento */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+}
+footer .copyright{
     margin: 50px 0 0 70px;
 }
-footer .footer-hotmail{
+footer .Email{
     display: flex;
 }
-footer .paragrafo-hotmail{
-    margin: 50px 70px 0 5px;
-}
-footer .footer-hotmail a img{
+footer .Email a .imgEmail{
     margin-top: 45px;
     height: 30px;
 }
-@media (max-width: 1421px){
-    .titulo h1{
-        margin: 270px 0 0 150px;
-        
-        font-size: 40px;
-    }
+footer .paragrafoEmail{
+    margin: 50px 70px 0 5px;
 }
-@media (max-width: 1125px){
-    .titulo h1{
-        margin: 270px 0 0 80px;
-        width: 80%;
-        font-size: 30px;
-    }
+/* Botão Voltar ao Topo */
+#btnTopo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 971px){
-    header{
-        flex-direction: column;
+#btnTopo img{
+    width: 30px;
+}
+#btnTopo:hover{
+    transform: scale(1.1);
+    background-color: #ffb347;
+}
+#btnTopo:active{
+    background-color: orange;
+}
+/* Responsividade do Site */
+/* Tablet grande / notebook pequeno */
+@media (max-width: 1280px) { 
+    /*  */
+    .historia .boxFlex .boxImg img{
+        width: 500px;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+    /*  */
+    .enredo .boxFlex .boxImg img{
+        width: 500px;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+    /*  */
+    .sagas .boxFlex .boxImg img{
+        width: 500px;
+        object-fit: cover;
+        object-position: 50% 60%;
+    }
+    /*  */
+    .boxFlex{
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
-    header a img{
-        margin-left: -100px;
+    .boxFlex .boxImg{
+        margin: 50px 0 0 50px;
     }
-    header nav ul{
-        margin: 20px 0 20px 70px;
-        display: flex;
-    }
-    header nav ul li a{
-        margin: 0 0 0 -50px;
-    }
-    .p{
+    /*  */
+    .paragrafo{
+        padding-top: 60px;
         width: 100%;
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 800px){
-    .principal img{
-        margin-top: 170px;
-        width: 400px;
-    }
-}
-@media (max-width: 725px){
-    .principal img{
-        margin-top: 230px;
-        width: 350px;
-    }
-}
-@media (max-width: 677px){
-    .personagens .paragrafo-sobre-mim{
-        margin: 20px 30px 0px 50px;
+        font-size: 20px;
         text-align: justify;
     }
-}
-@media (max-width: 665px){
-    .principal{
-        height: 300px;
     }
-    .principal img {
-        width: 200px;
-        margin-top: 60px;
-        position: absolute;
-        right: 100%;
-        animation: moverDaDireitaParaAEsquerda 4s forwards;
-    }
-    .principal h1{
-        margin: 100px 0 0 20px;
-        font-size: 20px;
-    }
-}
-@media (max-width: 500px){
+/* Tablet */
+@media (max-width: 840px){
+    /*  */
     header{
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     header a img{
-        margin-left: 0;
+        margin: 5px 0 0 0;
+        width: 100px;
     }
-    header nav ul {
-        margin: 0;
+    header nav .navlinks li{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 0 0;
+    }
+    /*  */
+    .tituloApresentacao{
         display: flex;
-    }
-    header nav ul li{
-        margin: 0 10px 30px 10px;
-        padding: 0;
-    }
-    header nav ul li a{
-        font-size: 16px;
-        padding: 10px;
-        margin: 0 -10px 0 0;
-    }
-    .principal{
-        height: 300px;
-    }
-    .principal img {
-        width: 200px;
-        margin-top: 60px;
-        position: absolute;
-        right: 100%;
-        animation: moverDaDireitaParaAEsquerda 4s forwards;
-    }
-    .principal h1{
-        margin: 80px 0 0 20px;
-        font-size: 20px;
-    }
-    .historia{
-        padding: 40px;
-    }
-    h2{
-        margin-top: 20px;
-    }
-    .enredo{
-        padding: 40px;
-    }
-    .sagas{
-        padding: 40px;
-    }
-    .mangas{
-        padding: 40px;
-    }
-    .filmes{
-        padding: 40px;
-    }
-    .musicas{
-        padding: 40px;
-    }
-    .personagens .h2{
-        margin-left: 60px;
-    }
-    .personagens .paragrafo-personagens{
-        margin: 40px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 90px;
+        width: 40%;
     }
 }
-@media (max-width: 496px){
-    footer{
-        height: 130px;
+/* Celular */
+@media (max-width: 480px){ 
+    /*  */
+    header{
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
     }
-    footer .footer-hotmail{
-        margin: -60px 0 0 70px;
+    /* Esconde os links no mobile */
+    header nav .navlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        padding: 0;
+        gap: 20px;
+        top: 70px;
+        right: 0;
+        height: 0;
+        width: 200px;
+        transition: 0.4s;
+        overflow: hidden;
+        border-radius: 20px;
+        background: rgba(255, 166, 0, 0.281);
+    }
+    header nav .navlinks li{
+        width: 100%;
+        text-align: center;
+    }
+    header nav .navlinks li a{
+        padding: initial;
+        border: initial;
+        border-radius: initial;
+        background-color: initial;
+        color: initial;
+    }
+    header nav .navlinks li a:hover{
+        padding: initial;
+        border: initial;
+        border-radius: initial;
+        background-color: initial;
+        color: initial;
+    }
+    header nav .navlinks li a:active{
+        padding: initial;
+        background-color: initial;
+        color: white;
+    }
+    header nav .navlinks.show{
+        height: 200px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    /*  */
+    .apresentacao{
+        height: 500px;
+        border-radius: 50px;
+    }
+    .tituloApresentacao{
+        margin-left: 10px;
+        width: 60%;
+    }
+    .tituloApresentacao h1{
+        font-size: 30px;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.87);
+        text-shadow: 0 0 5px orange;
+    }
+    .apresentacao img{
+        margin: 120px 0 0 70px;
+        height: 380px;
+    }
+    /*  */
+    .historia{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .boxFlex .boxImg{
+        margin: 50px 0 0 0;
+    }
+    .historia .boxFlex .boxImg img{
+        height: 400px;
+        width: initial;
+        border-radius: 30px;
+    }
+    .paragrafo{
+        text-align: justify;
+        padding-top: 60px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .paragrafo2{
+        text-align: justify;
+        margin: 50px 0 30px 0;
+        font-size: 20px;
+    }
+    /*  */
+    .enredo{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .boxFlex .boxImg{
+        margin: 50px 0 0 0;
+    }
+    .enredo .boxFlex .boxImg img{
+        height: 400px;
+        width: initial;
+        border-radius: 30px;
+    }
+    .paragrafo{
+        text-align: justify;
+        padding-top: 60px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .paragrafo2{
+        text-align: justify;
+        margin: 50px 0 30px 0;
+        font-size: 20px;
+    }
+    /*  */
+    .sagas{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sagas ul li{
+        margin: 40px 0 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: orange;
+    }
+    .boxFlex .boxImg{
+        margin: 50px 0 0 0;
+    }
+    .sagas .boxFlex .boxImg img{
+        height: 400px;
+        width: initial;
+        border-radius: 30px;
+    }
+    .paragrafo{
+        text-align: justify;
+        padding-top: 60px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .paragrafo2{
+        text-align: justify;
+        margin: 50px 0 30px 0;
+        font-size: 20px;
+    }
+    /*  */
+    .mangas{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    /*  */
+    .filmes{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    /*  */
+    .musicas{
+        padding: 50px 15px 50px 15px;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    /*  */
+    .personagens{
+        padding: 50px 0 50px 0;
+        border-radius: 50px;
+    }
+    .personagens h2{
+        text-align: center;
+        margin: 30px 0 0 0;
+    }
+    .container{
+        justify-content: center;
+    }
+    .boxPersonagens{
+        margin: 30px 0 0 0;
+    }
+    .personagens .paragrafo{
+        margin: 40px 20px 40px 20px;
+        padding: 0;
+        width: 90%;
+        word-spacing: 10px;
+    }
+    .personagens .paragrafo2{
+        margin: 0 20px 40px 20px;
+    }
+    /*  */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 0 0 20px 0;
+    }
+    footer .Email a .imgEmail{
+        margin-top: 0;
+        height: 30px;
+    }
+    footer .paragrafoEmail{
+        margin: 8px 0 0 5px;
     }
 }
