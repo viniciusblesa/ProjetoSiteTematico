@@ -34,8 +34,3 @@ const navLinks = document.getElementById("navlinks");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 });
-
-// Após 3 segundos, traz a imagem para frente
-  setTimeout(() => {
-    document.getElementById("goku").style.zIndex = 2;
-  }, 7000);

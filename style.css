@@ -371,7 +371,7 @@ footer .paragrafoEmail{
         transition: 0.4s;
         overflow: hidden;
         border-radius: 20px;
-        background: rgba(255, 166, 0, 0.281);
+        background: rgba(255, 166, 0, 0.705);
     }
     header nav .navlinks li{
         width: 100%;
@@ -382,7 +382,7 @@ footer .paragrafoEmail{
         border: initial;
         border-radius: initial;
         background-color: initial;
-        color: initial;
+        color: white
     }
     header nav .navlinks li a:hover{
         padding: initial;
