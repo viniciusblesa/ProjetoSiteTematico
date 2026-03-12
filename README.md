@@ -1,4 +1,4 @@
-﻿# Site-Dragon-Ball
+﻿# Site Tematico Dragon-Ball
 
-Link do site:
-https://viniciusblesa.github.io/Site-Dragon-Ball/
+Acessar:
+https://viniciusblesa.github.io/ProjetoSiteTematico/
