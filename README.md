@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Dragon Ball Fan Site
 
 Site fan-made sobre o universo de Dragon Ball, desenvolvido com HTML, CSS e JavaScript. O projeto exibe uma página inicial com história, personagens, mangás, filmes, músicas e links para páginas complementares.
@@ -116,3 +117,9 @@ Este projeto é apenas para fins educacionais e de demonstração. Não é um pr
 - incluir modo escuro/claro
 - otimizar acessibilidade e SEO
 - estruturar melhor a organização interna de componentes e estilos
+=======
+﻿# Site Tematico Dragon-Ball
+
+Acessar:
+https://viniciusblesa.github.io/ProjetoSiteTematico/
+>>>>>>> d2aa404993017a463ddc91b4f326a844ae5a2300
