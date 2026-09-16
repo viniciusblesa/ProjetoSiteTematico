@@ -5,7 +5,7 @@ Site fan-made sobre o universo de Dragon Ball, desenvolvido com HTML, CSS e Java
 
 ## 🔗 Link do projeto
 
-- GitHub Pages: https://viniciusblesa.github.io/Site-Dragon-Ball/
+- GitHub Pages: https://viniciusblesa.github.io/ProjetoSiteTematico/
 
 ## 📌 Visão geral
 
