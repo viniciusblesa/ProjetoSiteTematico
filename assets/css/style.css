@@ -12,6 +12,17 @@
     --shadow: rgba(0, 0, 0, 0.32);
 }
 
+html[data-theme="light"] {
+    --bg-deep: #fff8e7;
+    --bg-mid: #f4ead2;
+    --panel: rgba(255, 252, 243, 0.9);
+    --panel-strong: rgba(255, 255, 255, 0.96);
+    --text: #2d2418;
+    --muted: #665845;
+    --line: rgba(91, 65, 28, 0.16);
+    --shadow: rgba(91, 65, 28, 0.16);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -124,6 +135,25 @@ header a img {
 .btn-primary:hover,
 .btn-secondary:hover {
     transform: translateY(-2px);
+}
+
+.theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: var(--panel-strong);
+    color: var(--accent);
+    font-size: 1.25rem;
+    cursor: pointer;
+    box-shadow: 0 10px 22px var(--shadow);
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px) rotate(12deg);
 }
 
 .hamburger {
@@ -535,6 +565,30 @@ footer .Email a img {
     filter: drop-shadow(0 8px 18px rgba(255, 183, 3, 0.25));
 }
 
+html[data-theme="light"] .navlinks {
+    background: rgba(255, 252, 243, 0.86);
+}
+
+html[data-theme="light"] .apresentacao {
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.2), rgba(255, 255, 255, 0.62));
+}
+
+html[data-theme="light"] .historia,
+html[data-theme="light"] .enredo,
+html[data-theme="light"] .sagas,
+html[data-theme="light"] .mangas,
+html[data-theme="light"] .filmes,
+html[data-theme="light"] .musicas,
+html[data-theme="light"] .personagens {
+    background: linear-gradient(180deg, rgba(255, 252, 243, 0.94), rgba(255, 248, 231, 0.9));
+}
+
+html[data-theme="light"] .hero-stats li,
+html[data-theme="light"] .btn-secondary {
+    background: rgba(255, 255, 255, 0.58);
+    border-color: var(--line);
+}
+
 #btnTopo {
     position: fixed;
     right: 22px;
@@ -657,6 +711,11 @@ footer .Email a img {
 
     .hero-actions {
         width: 100%;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
     }
 
     .container {

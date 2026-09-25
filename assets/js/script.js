@@ -12,6 +12,30 @@ function toggleImage(id) {
     }
 }
 
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('dragon-ball-theme');
+const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+const initialTheme = savedTheme || (prefersLight ? 'light' : 'dark');
+
+document.documentElement.dataset.theme = initialTheme;
+
+const updateThemeToggle = () => {
+    const isLight = document.documentElement.dataset.theme === 'light';
+    themeToggle.setAttribute('aria-label', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+    themeToggle.setAttribute('title', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+    themeToggle.querySelector('.theme-icon').textContent = isLight ? '☾' : '☀';
+};
+
+if (themeToggle) {
+    updateThemeToggle();
+    themeToggle.addEventListener('click', () => {
+        const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem('dragon-ball-theme', nextTheme);
+        updateThemeToggle();
+    });
+}
+
 const navLinks = document.querySelectorAll('.navlinks a');
 const sections = [...document.querySelectorAll('section[id], div[id], footer')]
     .filter((element) => element.id && element.id !== '');
@@ -82,6 +106,6 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('visible');
         }
     });
-}, { threshold: 0.12 });
+}, { threshold: 0 });
 
 revealElements.forEach((element) => observer.observe(element));
